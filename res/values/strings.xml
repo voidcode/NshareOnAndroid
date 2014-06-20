@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nshare</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_updatelistview">Update list</string>
+    <string name="action_arptabel">ARP-Tabel</string>
+    <string name="action_scan_networksegment">Scan of other devices</string>
+	<string name="default_port">12345</string>
+</resources>

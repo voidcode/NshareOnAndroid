@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.voidcode.nshare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:required="true" android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission  android:required="true" android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:required="true" android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.voidcode.nshare.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+        	<action android:name="android.intent.action.SEND" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <data android:mimeType="text/plain" />
+		    </intent-filter>
+            
+        </activity>
+        <activity
+            android:name="com.voidcode.nshare.ArpActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation">
+        </activity>
+        <activity
+            android:name="com.voidcode.nshare.CopyActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation">
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+          android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <service
+	        android:name="com.voidcode.nshare.NotificationService"
+	        android:label="My Service" >
+    	</service>
+    </application>
+
+</manifest>
