@@ -5,6 +5,8 @@ Share your clipboard or website/urls to other devices with Nshare installed over
 
 This app only need other devices to be on the same subnet.
 
+![See an video of NshareOnAndroid](https://raw.githubusercontent.com/voidcode/NshareOnAndroid/master/docs/nshareandroid-sharelink.ogv)
+
 ![NshareOnAndroid](https://raw.githubusercontent.com/voidcode/NshareOnAndroid/master/docs/nshare-android2.png)
 
 Install via QR-code.
